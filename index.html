@@ -15,6 +15,7 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">        
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,500,700,900" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
@@ -43,6 +44,7 @@
                 <div class="collapse navbar-collapse" id="nav--items">
                     <ul class="nav navbar-nav navbar-right">
                     <li><a href="#at-home" class="page-scroll ">Home</a></li>
+                    <li><a href="#at-services" class="page-scroll">Services</a></li>
                     <li><a href="#at-about" class="page-scroll">About</a></li>
                     <li><a href="#at-contact" class="page-scroll">Contact</a></li>
                     </ul>
@@ -58,11 +60,56 @@
                 <div class="content">
                     <h1>We build digital products that users love</h1>
                     <p class="lead">We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>
-                    <a href="#at-about" class="fa fa-angle-down page-scroll"></a>
+                    <a href="#at-services" class="fa fa-angle-down page-scroll"></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Services Page
+    ==========================================-->
+    <section class="services">
+            <div id="at-services">
+                <div class="overlay">
+                        <div class="container text-center">
+                            <div class="row">
+                                    <div class="section-title text-center">
+                                        <h2>Experienced and Skilled</h2>
+                                        <p class="intro text-center">We’ve produced top quality products for hundreds of clients for almost a decade. From one-person startups to Fortune 500 companies and non-profits. Here’s what we can do for you.</p>
+                                    </div>
+                                    <div class="space"></div>
+                                <div class="col-md-3 col-services">
+                                    <div><span class="fa fa-laptop fa-5x icon-bg  "></span></div>
+                                    <div class=""><h1>Strategy</h1></div>
+                                    <div><p>From idea to project plan, we’ll work to research, define, and validate your product.</p></div>
+                                    <div class="learnMore"> <a href="#at-about" class="page-scroll">Learn More</a></div>
+                                </div>
+        
+                                <div class="col-md-3 col-services ">
+                                    <div><span class="fa fa-laptop fa-5x icon-bg  "></span></div>
+                                    <div class=""><h1>Business Development</h1></div>
+                                    <div><p>We design products users want through UX research, prototypes, and user testing </p></div>
+                                    <div class="learnMore"> <a href="#at-about" class="page-scroll">Learn More</a></div>
+                                </div>
+        
+                                <div class="col-md-3 col-services">
+                                    <div><span class="fa fa-laptop fa-5x icon-bg  "></span></div>
+                                    <div class=""><h1>Technology</h1></div>
+                                    <div><p>Build products that are beautiful, functional, and enjoyable.Take pride in what have created</p></div>    
+                                    <div class="learnMore"> <a href="#at-about" class="page-scroll">Learn More</a></div>
+                                </div>
+        
+                                <div class="col-md-3 col-services">
+                                    <div><span class="fa fa-laptop fa-5x icon-bg  "></span></div>
+                                    <div class=""><h1>Advisory</h1></div>
+                                    <div><p>Build products that are beautiful, functional, and enjoyable. Take pride in what have created.</p></div>
+                                    <div class="learnMore"> <a href="#at-about" class="page-scroll">Learn More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+      </section>
 
     <!-- About Us Page
     ==========================================-->
@@ -80,7 +127,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6  at-about-wt-icons ">
                                             <div><span class="fa fa-laptop fa-5x icon-bg  "></span></div>
-                                            <div class="margin-t-b-20"><h1>Do Great Work</h1></div>
+                                            <div class=""><h1>Do Great Work</h1></div>
                                             <div><p>Build products that are beautiful, functional, and enjoyable. Take pride in what you and your team have created.</p></div>
                                         </div>
                                         <div class="col-md-6 col-sm-6 at-about-wt-icons">
@@ -144,14 +191,14 @@
                                 <input name="_subject" value="Contact Advent Tech" type="hidden">
                                 <div class="emailme-preheader">
                                    <div class="left">
-                                        <img src="img/email.svg" alt="email icon">
+                                        <img src="img/email.svg" alt="email icon" class="emailUs-icon">
                                     </div>
                                   <div class="right">Email Us</div>
                                 </div>
                                 <div class="emailme-header">
                                   <div class="emailme-header-line">
-                                    <p class="label">From:</p>
-                                    <input type="email" name="email" class="value" placeholder="your@email.com">
+                                    <p class="label">From*:</p>
+                                    <input type="email" name="email" class="value" placeholder="your@email.com" required>
                                   </div>
                                   <div class="emailme-header-line">
                                     <p class="label">To:</p>
@@ -165,10 +212,10 @@
                                 <div class="emailme-body">
                                   Hello Advent Tech, <br>
                                   <p class="emailme-body">
-                                    <textarea name="message" id="" rows="5" class="emailme-message"></textarea>
+                                    <textarea name="message" id="" rows="5" class="emailme-message" placeholder="Your message" required></textarea>
                                   </p>
                                   Best regards, <br>
-                                  <input type="text" placeholder="Your name" name="Full Name" class="emailme-sender">
+                                  <input type="text" placeholder="Your name" name="Full Name" class="emailme-sender" required>
                                 </div>
                                 <input type="hidden" name="_next" value="https://tejuafonja.com/thanks">
                                 <div class="emailme-footer">
@@ -180,25 +227,31 @@
                     <div class="col-md-6 contact-details ">
                         <h3>Contact Us</h3>
                         <div class="space"></div>
-                        <div class="short-info address ">
+                        <div class="contact-info address ">
                             <div>
                                 <i class="fa fa-building-o fa-3x icon-bg "></i>
                             </div>
                             <p >16 Kofo Abayomi <br> Victoria Island, Lagos, Nigeria <br> </p>
                         </div> 
         
-                        <div class="short-info phone">
+                        <div class="contact-info phone">
                             <div>
                                 <i class="fa fa-phone fa-3x icon-bg "></i>
                             </div>
                             <p >+234 (817) 846-4526 </p>
                         </div> 
         
-                        <div class="short-info office-hour">
+                        <div class="contact-info office-hour">
                             <div>
                                 <i class="fa fa-clock-o fa-3x icon-bg "></i>
                             </div>
                             <p>Monday – Friday: 9AM – 6PM <br> Saturday - Sunday: Closed</p>
+                        </div> 
+                        <div class="contact-info ">
+                            <div>
+                                <i class="fa fa-envelope-o fa-3x icon-bg "></i>
+                            </div>
+                            <p> info@advent-tech.com </p>
                         </div> 
                     </div>
                 </div>
@@ -206,22 +259,20 @@
         </div>
            
         </section>
-    <footer>
-        <nav id="footer">
-            <div class="container">
-                <div class="pull-left fnav">
-                        <p>ADVENT TECH &copy; 2017 ALL RIGHTS RESERVED | Coded and Designed by <a href="https://twitter.com/tejuafonja" target="_blank">s3nsei</a></p>
-                </div>
-                <div class="pull-right fnav">
-                    <ul class="footer-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                    <small>ADVENT TECH &copy; 2017 ALL RIGHTS RESERVED | Coded and Designed by <a href="https://twitter.com/tejuafonja" target="_blank" class="hover">s3nsei</a></small>
             </div>
-        </nav>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
