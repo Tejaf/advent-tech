@@ -18,6 +18,10 @@ html{
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1,h2,h3 {
     margin: 0
 }
@@ -80,10 +84,6 @@ a {
     color: var(--primaryColor) !important;
 }
 
-.on a:hover {
-  
-}
-
 .navbar-toggle {
 	border-radius: 0;
 }
@@ -109,6 +109,8 @@ a {
     =================
 */
 #at-home{
+    height: 100vh;
+    width: 100%;
 	background: url(../img/05.jpg);
 	background-size: cover;
 	background-position: center;
@@ -118,7 +120,7 @@ a {
 }
 
 #at-home .overlay{
-	height: 750px;
+	height: 100vh;
     background-image:linear-gradient(-45deg, rgba(3, 24, 54, 0.6) 60%,rgba(212, 217, 240, 0.6));  
 	background-attachment: fixed;
 }
@@ -137,7 +139,6 @@ a {
 .content h1 {
     margin-bottom: 10px;
     font-size: 4rem;
-    /* color: #fff */
 }
 
 
@@ -172,7 +173,6 @@ a.fa.fa-angle-down:hover{
 }
 
 #at-services .overlay{
-    height: 750px;
     background-image: linear-gradient(135deg, var(--primaryColor), whitesmoke);
     background-image: -webkit-linear-gradient(-405deg, #3023AE, #C96DD8);
     background-attachment: fixed;
@@ -200,13 +200,12 @@ a.fa.fa-angle-down:hover{
     color: #cfcfcf;
     font-size: 1.1rem;
     padding-bottom: 30px;
+    margin: 0 auto;
 }
 
 
 .learnmore {
     margin: 30px 0; 
-    position: absolute; 
-    left: 100px;
 }
 
 .learnmore a {
@@ -247,7 +246,8 @@ a.fa.fa-angle-down:hover{
 	
 }
 
-.space {
+.space,
+.r1 {
     margin-bottom: 40px;
 }
 
@@ -258,7 +258,7 @@ a.fa.fa-angle-down:hover{
 .at-about-wt-icons h1 {
     font-size: 1.4rem;
     font-weight: 700;
-    margin: 20px 0 5px;
+    margin: 20px 0 10px;
 }
 
 /*===================
@@ -287,7 +287,9 @@ a.fa.fa-angle-down:hover{
     background-image:linear-gradient(-45deg, rgba(3, 24, 54, 0.6) 60%,rgba(212, 217, 240, 0.6));  
     z-index: -1      
 }
-
+.contact-details h3 {
+    text-transform: uppercase;
+}
 
 .contact-info {
     display: flex;
@@ -296,12 +298,11 @@ a.fa.fa-angle-down:hover{
 
 .contact-info p {
     margin-left: 30px;
-    align-self: flex-end;
-    color: fff;
+    color: #fff;
+    align-self: center;
 }
 .contact-details {
     padding-left: 150px;
-    text-transform: uppercase;
 }
 
 .contact-details h3 {
@@ -520,3 +521,142 @@ input:-ms-input-placeholder {
     opacity: 0.6;
     font-size: 1.2rem;
 }
+
+
+/*===============
+    Samsung, Nexus,
+    Major phone screens
+==============*/
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+    #at-menu.navbar-default {
+        background:  rgba(48, 34, 174,0.2) !important;
+        background:  rgba(179, 136, 255, 0.1) !important
+    }
+
+    #at-menu.navbar-default .navbar-nav > li > a {
+        padding: 10px 0 !important;
+        font-size: 13px;
+    }
+
+    #at-menu.navbar-default .navbar-nav > li > a:hover {
+        border-bottom: none !important;
+    }
+
+    #at-menu.on {
+        background-color: whitesmoke!important;
+    }
+
+    #at-menu.on .nav > li > a:hover,
+    #at-menu.on .nav > li > a:active {
+        /* color: #fff !important; */
+    }
+    
+    .home .content {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 35%;
+    }
+    .home .content h1 {
+        color: #fff;
+        letter-spacing: 1.5;
+        font-size: 3rem;
+    }
+
+    a.fa.fa-angle-down {
+        margin-top: 20%;
+    }
+
+    .services .section-title h2,
+    .about .section-title h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .services .section-title .intro,
+    .col-services p {
+        width: 90%;
+    }
+
+    .services .section-title .intro,
+    .about .section-title .intro {
+        font-size: 20px;
+    }
+
+    .col-services p,
+    .about-text p,
+    .sidebar p {
+        font-size: 16px;
+    }
+
+    .learnmore {
+        font-size: 20px;
+    }
+
+    .learnmore,
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .about .container {
+        width: 90%;
+    } 
+    .about-text .row {
+        padding: 0 !important
+    }
+
+    .r1 {
+        margin-bottom: 0;
+    }
+    .contact-details {
+        padding-left: 0;
+    }
+    .contact-info {
+        margin-left: 12%;
+        font-size: 16px;
+    }
+
+    .contact-info .fa {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 14px;
+    }
+
+
+    footer i.fa {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+    }
+
+ }
+
+ /* Smartphones (landscape) ----------- */
+@media only screen and (max-height : 560px) {
+    .home .content {
+        padding-top: 11%;
+    }
+    .arrow-down .fa-angle-down {
+        margin-top: 50px !important;
+    }
+}
+
+/*===============
+    IPad 
+==============*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .home,
+    .home .overlay {
+        height: 750px;
+    }
+
+    .home .content {
+        padding-top: 30%;
+    }
+    
+}
+
