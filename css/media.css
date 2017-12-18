@@ -1,0 +1,177 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #at-menu {
+        padding: 15px 10px;
+    }
+    #at-menu.navbar-default .navbar-nav > li > a {
+        padding: 10px 0 !important;
+        font-size: 14px;
+        color: #3023AE !important;
+    }
+    .home .content h1 {
+        letter-spacing: 1.5;
+    }
+    a.fa.fa-angle-down { 
+        margin-top: 15vh;
+     }
+    .services .section-title h2,
+    .about .section-title h2 {
+        text-transform: uppercase;
+        padding: 0 10px;
+    }
+    .learnmore,
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .about .container {
+        width: 90%;
+    } 
+    .about-text .row {
+        padding: 0 !important
+    }
+
+    .r1 {
+        margin-bottom: 0;
+    }
+    .contact-body {
+        width: 100%;
+        padding-left: 0;
+    }
+    .contact-details {
+        padding-left: 0;
+    }
+    .contact-info .fa {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 16px;
+    }
+    footer i.fa {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (max-width : 320px) {
+    .home .content { 
+        width: 90%;
+     }
+    .home .content h1 { 
+        font-size: 1.5rem; 
+    }
+    #at-home p.lead { 
+        font-size: 16px; 
+    }
+    .services .section-title h2,
+    .about .section-title h2 { 
+        font-size: 1.5rem
+     }
+    .services .section-title .intro  {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .col-services p,
+    .about-text p,
+    .sidebar p { 
+        font-size: 16px;
+    }
+    .learnmore { 
+        font-size: 18px; 
+    }
+    .contact-info { 
+        font-size: 14px; 
+    }
+    .emailme-form {  
+        font-size: 1em;
+    }
+}
+
+
+/*===============
+    Samsung, Nexus,
+    Major phone screens
+==============*/
+
+@media only screen and (min-width : 321px) and (max-width : 768px) {
+    .home .content {
+        width: 100%;
+        position: relative;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .home .content h1 { 
+        font-size: 2rem; 
+    }
+    .services .section-title h2,
+    .about .section-title h2 { 
+        font-size: 2rem; 
+    }
+    .services .section-title .intro,
+    .col-services p {
+        width: 90%;
+    }
+    .services .section-title .intro,
+    .about .section-title .intro { 
+        font-size: 22px; 
+    }
+    .col-services p,
+    .about-text p,
+    .asidebar p,
+    .learnmore { 
+        font-size: 20px;
+     }
+    .contact-info {
+        margin-left: 12%;
+        font-size: 16px;
+    }
+ }
+
+
+
+ /* Smartphones (landscape) ----------- */
+@media only screen and (max-height : 560px) {
+    .home .content {
+        padding-top: 11%;
+    }
+    .arrow-down .fa-angle-down {
+        margin-top: 50px !important;
+    }
+  
+}
+
+
+/*===============
+    IPad 
+==============*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #at-menu.navbar-default .navbar-nav > li > a {
+        color: #fff !important;
+    }
+    .home,
+    .home .overlay {
+        height: 750px;
+    }
+
+    .home .content {
+       width: 80%;
+    }
+    #at-menu.on .navbar-nav > li > a {
+        color: #3023AE !important;
+    }
+    #at-menu.on .navbar-nav > li > a.active {
+        color: #FFA500 !important;
+    }
+    #at-menu.navbar-default .navbar-nav > li > .first {
+        color: #FFA500 !important;
+    }
+}
+
+
+
