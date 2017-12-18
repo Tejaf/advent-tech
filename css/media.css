@@ -136,11 +136,8 @@
 
  /* Smartphones (landscape) ----------- */
 @media only screen and (max-height : 560px) {
-    .home .content {
-        padding-top: 11%;
-    }
-    .arrow-down .fa-angle-down {
-        margin-top: 50px !important;
+    .fa-angle-down {
+        display: none !important;
     }
   
 }
