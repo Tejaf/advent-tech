@@ -176,7 +176,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #fff;
 	border-radius: 50%;
 	font-size: 24px;
-    margin-top: 150px;
+    margin-top: 100px;
     outline: none;
     animation: bounce 2s infinite alternate;
 	transition: var(--transition);
