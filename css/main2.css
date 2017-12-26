@@ -203,6 +203,10 @@ a.fa.fa-angle-down:hover{
      =================
 */
 
+.col-services {
+    margin-top: 30px;
+ }
+
 .services {
     color: #fff;
     position: relative;
@@ -211,6 +215,7 @@ a.fa.fa-angle-down:hover{
 #at-services .overlay{
     background-image: linear-gradient(135deg, var(--primaryColor), whitesmoke);
     background-image: -webkit-linear-gradient(-405deg, #3023AE, #C96DD8);
+    background: var(--primaryColor);
     background-attachment: fixed;
 }
 
@@ -271,7 +276,9 @@ a.fa.fa-angle-down:hover{
     =================
 */
 .about{
-    background: rgb(252, 252, 252)
+    background: rgb(252, 252, 252);
+    background: whitesmoke;
+    color: rgb(29, 29, 29)
 }
 
 .section-title h2 {
